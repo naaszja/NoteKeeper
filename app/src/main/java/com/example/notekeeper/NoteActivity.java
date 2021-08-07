@@ -39,7 +39,8 @@ public class NoteActivity extends AppCompatActivity {
         binding.fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+                String greeting = MyWorker.talkeyTalkey();
+                Snackbar.make(view, greeting, Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
             }
         });
